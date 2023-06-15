@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Spielstand</title>
+
+    <style>
+
+        body {
+            text-decoration: none;
+            color: black;
+            padding-left: 100px;
+            padding-right: 100px;
+            font-family: 'Arial';
+            background-color: lightgrey;
+            opacity: 0.9;
+
+        }
+
+        .headline1 {
+            color: white;
+            background: #666666;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+            display: flex;
+            justify-content: center;
+            font-size: 60px;
+        }
+
+        .aktuellerSatz {
+            text-decoration: none;
+            color: black;
+            width: 150px;
+            border: 5px dotted #000000;
+            border-radius: 40px 40px 40px 40px;
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+            margin-top: 20px;
+            margin-left: 500px;
+            text-decoration: none;
+        }
+
+        .Aufschlagsrecht {
+            font-size: 35px;
+            color: black;
+            margin: 25px;
+            background-color: beige;
+            opacity: 0.9;
+            box-shadow: 2px 10px 5px 0px rgba(137, 168, 189, 0.75);
+            -webkit-box-shadow: 2px 10px 5px 0px rgba(137, 168, 189, 0.75);
+            -moz-box-shadow: 2px 10px 5px 0px rgba(137, 168, 189, 0.75);
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .Punktestand {
+            background-color: whitesmoke;
+            opacity: 0.8;
+            color: black;
+            box-shadow: 1px 0px 10px -2px #000000;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            font-size: 100px;
+            margin-top: 25px;
+
+        }
+
+        .Spielabbruch {
+            margin-left: 1000px;
+            box-shadow: 0px 1px 0px 0px #1c1b18;
+            background-color: #eae0c2;
+            border-radius: 42px;
+            border: 1px solid #333029;
+            display: inline-block;
+            cursor: pointer;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 26px 16px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #ffffff;
+        }
+
+        .Spielabbruch:hover {
+            background-color: #ccc2a6;
+        }
+
+        .Spielabbruch:active {
+            position: relative;
+            top: 1px;
+        }
+        .Spielabbruch a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .Spielstart {
+            color: black;
+            margin-left: 1000px;
+            box-shadow: 0px 1px 0px 0px #1c1b18;
+            background-color: #eae0c2;
+            border-radius: 42px;
+            border: 1px solid #333029;
+            display: inline-block;
+            cursor: pointer;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 26px 16px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #ffffff;
+        }
+
+        .Spielstart:hover {
+            background-color: #ccc2a6;
+        }
+        .Spielstart:active {
+            position: relative;
+            top: 1px;
+        }
+        .Spielstart a {
+            text-decoration: none;
+            color: black;
+        }
+        .teams {
+            font-size: 25px;
+        }
+        .button {
+            text-decoration: none;
+            box-shadow: 0px 1px 0px 0px #1c1b18;
+            background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+            background-color: #eae0c2;
+            border-radius: 42px;
+            border: 1px solid #333029;
+            display: inline-block;
+            cursor: pointer;
+            color: black;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 26px 16px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #ffffff;
+        }
+        .button:hover {
+            text-decoration: none;
+            background: linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+            background-color: #ccc2a6;
+        }
+        .button:active {
+            text-decoration: none;
+            position: relative;
+            top: 1px;
+        }
+        .gewonneneSätze {
+            font-size: 20px;
+            justify-content: center;
+            margin-left: 450px;
+        }
+        .pause {
+            font-size: 20px;
+            justify-content: center;
+            margin-left: 450px;
+        }
+        .pauseSatz3
+        {
+            font-size: 20px;
+            justify-content: center;
+            margin-left: 450px;
+        }
+        .seitenwechsel {
+            font-size: 20px;
+            justify-content: center;
+            margin-left: 450px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h1 class="headline1">GAMECHANGER</h1>
+<div class="teams">
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b> TEAM 1 </b>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <b> TEAM 2 </b>
+</div>
+
+<div class="aktuellerSatz">
+    <p th:text="'Satz : ' + ${aktuellerSatz}"/>
+</div>
+<br>
+<div class="gewonneneSätze"> <p th:text ="'Bisher gewonnene Sätze - ' + ${gewonneneSaetze1} + ' : '+  ${gewonneneSaetze2}"/>
+</div>
+<div class="pause"> <p th:text ="${pause}"/>
+</div>
+
+<div class="pauseSatz3"> <p th:text ="${pauseSatz3}"/>
+</div>
+
+<div class ="seitenwechsel"> <p th:text ="${seitenwechsel}"/>
+</div>
+
+<div>
+    <a href="/updatepunkt?punkt=1&team=1"><button class="button">+</button></a>
+        <a href="/updatepunkt?punkt=-1&team=1"><button class="button">-</button></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="/updatepunkt?punkt=-1&team=2"><button class="button">-</button></a>
+        <a href="/updatepunkt?punkt=1&team=2"><button class="button">+</button></a>
+</div>
+
+<div class="Punktestand">
+    <p th:text="${team1Punkte} + ' : ' + ${team2Punkte} "/>
+</div>
+
+
+<div class="Aufschlagsrecht">
+    <p th:text="'Aufschlag : ' + ${aufschlag} + ' , ' + ${feldposition} + ' , Team : ' + ${teamnr} "/>
+</div>
+
+
+<div class="Spielstart">
+    <a href="/updatepunkt?punkt=0&team=1">Spiel starten</a>
+
+</div>
+<br> <br>
+<div class="Spielabbruch">
+    <a href="http://localhost:8080/anmelden">Spiel abbrechen</a>
+</div>
+
+</body>
+</html>

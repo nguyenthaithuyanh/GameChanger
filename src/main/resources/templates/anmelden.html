@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GameChanger Homepage</title>
+    <style>
+        h1{
+            color: black;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        body {
+            padding-left: 250px;
+            font-family: 'Arial';
+            background-color: lightgrey;
+            opacity: 0.6;
+            justify-content: center;
+            padding:5px;
+        }
+        .headline1 {
+            color: white;
+            background: #666666;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+            display: flex;
+            justify-content: center;
+            font-size: 60px;
+        }
+        .headline2 {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .Spielstart {
+            margin-left:25px;
+            background-color:black;
+            color:white;
+            width: 100px;
+            text-decoration: none;
+            padding: 10px;
+            border: 2px solid #000000;
+            border-radius: 40px 40px 40px 40px;
+
+        }
+
+    </style>
+</head>
+<body>
+<h1 class="headline1">GAMECHANGER</h1>
+<b class="headline2">Bitte die einzelnen Teams eingeben!</b>
+
+<form action="/anmeldungErfolgreich" method="POST">
+    <h1>TEAM 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TEAM 2 </h1>
+    <br>
+    <p1>Spieler 1
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Spieler 1</p1>
+    <br><br>
+    <div>
+        <label for="t1p1vorname"></label>
+        <input name="t1p1vorname" id="t1p1vorname" value="Vorname" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="t2p1vorname"></label>
+        <input name="t2p1vorname" id="t2p1vorname" value="Vorname" />
+    </div>
+    <div>
+        <label for="t1p1nachname"></label>
+        <input name="t1p1nachname" id="t1p1nachname" value="Nachname" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="t2p1nachname"></label>
+        <input name="t2p1nachname" id="t2p1nachname" value="Nachname" />
+    </div>
+    <div>
+        <label for="t1p1RightOfService"></label>
+        <input name="t1p1RightOfService" id="t1p1RightOfService" value="RightOfService" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="t2p1RightOfService"></label>
+        <input name="t2p1RightOfService" id="t2p1RightOfService" value="RightOfService" />
+    </div>
+    <div>
+        <label for="t1p1teamnr"></label>
+        <input name="t1p1teamnr" id="t1p1teamnr" value="TeamNr" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="t2p1teamnr"></label>
+        <input name="t2p1teamnr" id="t2p1teamnr" value="TeamNr" />
+    </div>
+    <br>
+    <p1>Spieler 2
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Spieler 2</p1>
+    <br>
+    <br>
+    <div>
+        <label for="t1p2vorname"></label>
+        <input name="t1p2vorname" id="t1p2vorname" value="Vorname" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="t2p2vorname"></label>
+        <input name="t2p2vorname" id="t2p2vorname" value="Vorname" />
+    </div>
+    <div>
+        <label for="t1p2nachname"></label>
+        <input name="t1p2nachname" id="t1p2nachname" value="Nachname" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="t2p2nachname"></label>
+        <input name="t2p2nachname" id="t2p2nachname" value="Nachname" />
+    </div>
+    <div>
+        <label for="t1p2RightOfService"></label>
+        <input name="t1p2RightOfService" id="t1p2RightOfService" value="RightOfService" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="t2p2RightOfService"></label>
+        <input name="t2p2RightOfService" id="t2p2RightOfService" value="RightOfService" />
+    </div>
+    <div>
+        <label for="t1p2teamnr"></label>
+        <input name="t1p2teamnr" id="t1p2teamnr" value="TeamNr" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="t2p2teamnr"></label>
+        <input name="t2p2teamnr" id="t2p2teamnr" value="TeamNr" />
+    </div>
+    <br>
+
+    <button class="Spielstart">Spiel starten</button>
+
+</form>
+</body>
+</html>
