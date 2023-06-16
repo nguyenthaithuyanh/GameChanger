@@ -1,4 +1,6 @@
 Punktezählsystem für ein Badmintonspiel 
+
+
 Allgemeine Spielregeln:
 Spielfeld: Das Badminton-Spielfeld ist in der Mitte durch ein Netz geteilt. Es gibt separate Spielfelder für Einzel- und Doppelspiele.
 Aufschlag: Das Spiel beginnt mit einem Aufschlag. Der Aufschläger muss den Federball diagonal über das Netz ins gegnerische Aufschlagfeld schlagen. Der Aufschlag wechselt nach jedem Punktgewinn.
